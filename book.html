@@ -1,0 +1,156 @@
+<html>
+<head>
+	<style>
+		td.menu{
+			background-color: maroon ;
+			text-align:center;
+			border: 1px black dashed;
+		}
+		td.menu:hover{
+			background-color: blue ;
+			cursor:pointer;
+		}
+		
+		
+		a.menu_link:link{
+			color:white;
+			text-decoration:none;							
+		}
+		a.menu_link:visited{
+			color:red;	
+		}
+		a.menu_link:hover{
+			color:orange;	
+		}
+		
+		
+		a.normal:link{
+			color:maroon;
+			text-decoration:none;							
+		}
+		a.normal:visited{
+			color:maroon;	
+		}
+		a.normal:hover{
+			color:teal;
+			text-decoration:underline;
+		}
+	</style>
+</head>
+<body>
+
+<table border="0" width="800px" height="600px" align="center" cellpadding="10">
+<tr>
+	<td  height="150px" align="center">
+		<img src="logo.png" height="300px">
+	</td>
+	<td colspan="2">
+		<img src="banner.jpg" width="532px" height="250px">
+	</td>
+</tr>
+<tr>
+	<td colspan="3" height="40px">
+		<table border="0" width="800px">
+		<tr>
+			<td class="menu"><a class="menu_link" href="home.html">Home</a></td>
+			<td class="menu"><a class="menu_link" href="about.html">About us</a></td>
+			<td class="menu"><a class="menu_link" href="brands.html">Brands</a></td>
+			<td class="menu"><a class="menu_link" href="suv.html">Suvs</a></td>
+			<td class="menu"><a class="menu_link" href="sedan.html">Sedans</a></td>
+			<td class="menu"><a class="menu_link" href="van.html">Vans</a></td>
+			<td class="menu"><a class="menu_link" href="sports.html">Sports & Hatchbacks</a></td>
+			<td class="menu"><a class="menu_link" href="contact.html">Contact us</a></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+<form action="action.php" method="post" name="input" enctype="multipart/form-data">
+<table width="500" border="0" align="center" cellpadding="5">
+  <tr>
+    <td>Name</td>
+    <td width="350"><input type="text" name="name"/></td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td width="350"><input name="password" type="password" /></td>
+  </tr>
+  <tr>
+    <td>Phone</td>
+    <td width="350"><input name="phone" type="phone" /></td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td width="350"><input name="address" type="address" /></td>
+  </tr>
+  <tr>
+  <td>Car</td>
+    <td width="350"><select name="model">
+      <option value="0">Select One</option>
+      <option value="1">Axio</option>
+      <option value="2">Prius</option>
+      <option value="3">Fielder</option>
+	  <option value="4">Allion</option>
+	  <option value="5">Premio</option>
+	  <option value="6">Harrier</option>
+	  <option value="7">Prado</option>
+	  <option value="8">Noah</option>
+	  <option value="9">Grace</option>
+	  <option value="10">Vezel</option>
+	  <option value="11">Civic</option>
+	  <option value="12">Accord</option>
+	  <option value="13">CR-V</option>
+	  <option value="14">X-TRAIL</option>
+	  <option value="15">Axela</option>
+	  <option value="16">Miata</option>
+	  
+    </select></td>
+
+  </tr>
+  <tr>
+    <td>Color</td>
+    <td width="350">
+    	<input name="color1" type="checkbox" value="red" />Red
+        <input name="color2" type="checkbox" value="black" />Black
+        <input name="color3" type="checkbox" value="white" />White
+		<input name="color4" type="checkbox" value="Blue" />Blue
+		<input name="color4" type="checkbox" value="Silver" />Silver
+		</td>
+  </tr>
+  <tr>
+    <td>Fuel</td>
+    <td width="350">
+    	<input name="fuel1" type="checkbox" value="nonhybrid" />Non Hybrid
+        <input name="fuel2" type="checkbox" value="hybrid" />Hybrid
+       
+		</td>
+  </tr>
+  
+  <tr>
+    <td>Model</td>
+    <td width="350"><select name="model">
+      <option value="0">Select One</option>
+      <option value="1">2016</option>
+      <option value="2">2017</option>
+      <option value="3">2018</option>
+	  <option value="4">2019</option>
+	  <option value="5">2020</option>
+    </select></td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+    <td width="350"><input name="action" type="submit" value="Book" /></td>
+  </tr>
+</table>
+</form>
+<tr>
+	<td colspan="3" align="center" height="30px">
+		&copy;  Car Bazaar 2019 - All Rights Reserved
+	
+	</td>
+</tr>
+</table>
+
+</body>
+</html>
